@@ -27,22 +27,22 @@
                         <form action="/salvar" method="POST">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="nomedogrupo" id="nomedogrupo" placeholder="name@example.com">
-                                <label for="floatingInput">Nome do grupo</label>
+                                <label for="nomedogrupo">Nome do grupo</label>
                             </div>
 
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="direcaoartistica" id="direcaoartistica" placeholder="name@example.com">
-                                <label for="floatingInput">Direção artistica</label>
+                                <label for="direcaoartistica">Direção artistica</label>
                             </div>
 
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="nomedaacademia" id="nomedaacademia" placeholder="name@example.com">
-                                <label for="floatingInput">Nome da academia</label>
+                                <label for="nomedaacademia">Nome da academia</label>
                             </div>
 
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="endereco" id="endereco" placeholder="name@example.com">
-                                <label for="floatingInput">Endereço</label>
+                                <label for="endereco">Endereço</label>
                             </div>
 
                             <div class="row">
@@ -56,29 +56,26 @@
                                 <input type="text" class="form-control" name="pais" id="pais" placeholder="País:" >
                                 </div>
                                 <div class="col">
-                                <input type="int" class="form-control" name="ddd" id="ddd" placeholder="DDD:" >
+                                <input type="number" class="form-control" name="ddd" id="ddd" placeholder="DDD:" >
                                 </div>
                                 <div class="col">
-                                <input type="int" class="form-control" name="telefone" id="telefone" placeholder="Tel.:" >
+                                <input type="number" class="form-control" name="telefone" id="telefone" placeholder="Tel.:" >
                                 </div>
                             </div>
-                        
-                            <select class="form-select" style="width: 50%; margin-top: 20px; margin-bottom: 20px;" name="concorrente" id="concorrente" aria-label="Default select example">
-                                <option selected>Concorrente</option>
-                                <option value="true">Sim</option>
-                                <option value="false">Não</option>
-                                
-                              </select>
-
-
-
+                            <div>
+                                <label class="" for="concorrente" >Concorrente</label>
+                                <select class="form-select" style="width: 50%; margin-bottom: 20px;" name="concorrente" id="concorrente" aria-label="Default select example">
+                                    <option value="true">Sim</option>
+                                    <option selected value="false">Não</option>
+                                </select>
+                            </div>
                             <div class="form-floating mb-3">
                                     <input type="text" class="form-control" name="modalidade" id="modalidade" placeholder="name@example.com">
-                                    <label for="floatingInput">Modalidade</label>
+                                    <label for="modalidade">Modalidade</label>
                             </div>
 
                             <div class="col-auto" style="margin-bottom: 20px;">
-                                <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                <label class="visually-hidden" for="categoria">Preference</label>
                                 <select class="form-select" name="categoria" id="categoria">
                                     <option selected>Escolha a Categoria</option>
                                     <option value="Junior I">Junior I</option>
@@ -95,19 +92,19 @@
                                 <div class="col">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" name="coreografia" id="coreografia" placeholder="name@example.com">
-                                        <label for="floatingInput">Nome da coreografia</label>
+                                        <label for="coreografia">Nome da coreografia</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" name="nomecoreografo" id="nomecoreografo" placeholder="name@example.com">
-                                        <label for="floatingInput">Nome do coreografo</label>
+                                        <label for="nomecoreografo">Nome do coreografo</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" name="tempoduracao" id="tempoduracao" placeholder="name@example.com">
-                                        <label for="floatingInput">Tempo de duração em minutos</label>
+                                        <label for="tempoduracao">Tempo de duração em minutos</label>
                                     </div>
                                 </div>
                             </div>
@@ -115,13 +112,13 @@
                                 <div class="col">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" name="nomedamusica" id="nomedamusica" placeholder="name@example.com">
-                                        <label for="floatingInput">Nome da musica</label>
+                                        <label for="nomedamusica">Nome da musica</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" name="nomedocompositor" id="nomedocompositor" placeholder="name@example.com">
-                                        <label for="floatingInput">Nome do compositor</label>
+                                        <label for="nomedocompositor">Nome do compositor</label>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +126,7 @@
 
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="release" id="release" placeholder="name@example.com">
-                                <label for="floatingInput">Release da categoria (conteúdo, informações e objetivos do trabalho) </label>
+                                <label for="release">Release da categoria (conteúdo, informações e objetivos do trabalho) </label>
                             </div>
                             
                             <div style="justify-content: center; display: flex;">

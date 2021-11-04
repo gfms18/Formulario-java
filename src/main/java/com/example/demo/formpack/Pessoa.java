@@ -1,6 +1,14 @@
 package com.example.demo.formpack;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Pessoa {
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String nomedogrupo;
 	private String direcaoartistica;
 	private String nomedaacademia;
@@ -19,6 +27,22 @@ public class Pessoa {
 	private String nomedamusica;
 	private String nomedocompositor;
 	private String release;
+
+
+	public Pessoa() {
+
+	}
+
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	@Id
+	public Long getId() {
+		return id;
+	}
+
 	public String getNomedogrupo() {
 		return nomedogrupo;
 	}
@@ -121,25 +145,36 @@ public class Pessoa {
 	public void setNomedocompositor(String nomedocompositor) {
 		this.nomedocompositor = nomedocompositor;
 	}
+
 	public String getRelease() {
 		return release;
 	}
+
 	public void setRelease(String release) {
 		this.release = release;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Pessoa{" +
+				"nomedogrupo='" + nomedogrupo + '\'' +
+				", direcaoartistica='" + direcaoartistica + '\'' +
+				", nomedaacademia='" + nomedaacademia + '\'' +
+				", endereco='" + endereco + '\'' +
+				", cidade='" + cidade + '\'' +
+				", estado='" + estado + '\'' +
+				", pais='" + pais + '\'' +
+				", ddd=" + ddd +
+				", telefone=" + telefone +
+				", concorrente=" + concorrente +
+				", modalidade='" + modalidade + '\'' +
+				", categoria='" + categoria + '\'' +
+				", coreografia='" + coreografia + '\'' +
+				", nomecoreografo='" + nomecoreografo + '\'' +
+				", tempoduracao='" + tempoduracao + '\'' +
+				", nomedamusica='" + nomedamusica + '\'' +
+				", nomedocompositor='" + nomedocompositor + '\'' +
+				", release='" + release + '\'' +
+				'}';
+	}
 }

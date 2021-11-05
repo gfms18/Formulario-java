@@ -21,10 +21,10 @@ public class CadastroService {
 
    public void cadastrarGrupo(Grupo grupo) throws Exception {
       Grupo grupo1 = cadastroDAO.findGrupoByNomeEquals(grupo.getNome());
-      if (grupo.getTempoDuracao() <= 1)
-         throw new Exception("Musica menor que 1 minuto");
+      if (grupo.getTempoDuracao() <= 2)
+         throw new Exception("Musica menor que 2 minutos.");
       if (grupo.getNome() == grupo1.getNome() )
-         throw new Exception("Nome já existe");
+         throw new Exception("Nome já existe.");
       cadastroDAO.save(grupo);
    }
 

@@ -28,19 +28,23 @@ public class GrupoController {
 		model.addAttribute("lista", this.cadastroService.findAll(Sort.by("nome")));
 			return "lista";
 		}catch (Exception e){
-			e.printStackTrace();
+			String mensagem = e.getMessage();
+			model.addAttribute("erro", mensagem);
 			return "erro";
 		}
 	}
 	@PostMapping("/salvar")
-	public String salvar(Grupo grupo) throws Exception {
+	public String salvar(Grupo grupo, Model model) {
 		try {
+
 			System.out.println(grupo.toString());
 			this.cadastroService.cadastrarGrupo(grupo);
 			return "redirect:/listarcadastros";
+
 		} catch (Exception e){
-			e.printStackTrace();
+			model.addAttribute("erro", e.getMessage());
 			return "erro";
+
 		}
 	}
 

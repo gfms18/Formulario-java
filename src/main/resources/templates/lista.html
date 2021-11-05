@@ -14,20 +14,18 @@
     <table class="table">
         <thead>
         <tr>
-            <th scope="col">Id</th>
             <th scope="col">Nome do grupo</th>
             <th scope="col">Nome da Academia</th>
             <th scope="col">Coreografia</th>
         </tr>
         </thead>
         <tbody>
-        <tr  th:each="pessoa : ${lista}">
-            <td th:text="${pessoa.id}"></td>
-            <td th:text="${pessoa.nomedogrupo}"></td>
-            <td th:text="${pessoa.nomedaacademia}"></td>
-            <td th:text="${pessoa.coreografia}"></td>
-            <td><a th:href="@{/editarPessoa(codigo=${pessoa.id})}">Editar</a>&nbsp;&nbsp;
-                <a th:href="@{/removerPessoa(codigo=${pessoa.id})}">Remover</a></td>
+        <tr  th:each="grupo : ${lista}">
+            <td th:text="${grupo.nome}"></td>
+            <td th:text="${grupo.nomeAcademia}"></td>
+            <td th:text="${grupo.coreografia}"></td>
+            <td><a th:href="@{/editarPessoa(codigo=${grupo.id})}">Editar</a>&nbsp;&nbsp;
+                <a th:href="@{/removerPessoa(codigo=${grupo.id})}">Remover</a></td>
         </tr>
         </tbody>
     </table>

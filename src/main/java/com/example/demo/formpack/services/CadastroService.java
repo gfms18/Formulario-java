@@ -21,12 +21,19 @@ public class CadastroService {
 
    public void cadastrarGrupo(Grupo grupo) throws Exception {
       Grupo grupo1 = cadastroDAO.findGrupoByNomeEquals(grupo.getNome());
-      if (grupo.getTempoDuracao() <= 2)
+      if (grupo.getTempoDuracao() <= 2) {
          throw new Exception("Musica menor que 2 minutos.");
-      if (grupo.getNome() == grupo1.getNome() )
-         throw new Exception("Nome já existe.");
-      cadastroDAO.save(grupo);
-   }
+      }
+      if (grupo1 == null) {
+         cadastroDAO.save(grupo);
+      } else if (grupo1.getNome() == grupo.getNome()){
+         throw new Exception("Nome já exite, tente outro.");
+
+         } else {
+         cadastroDAO.save(grupo);
+      }
+
+      }
 
    public List<Grupo> findAll() {
       return cadastroDAO.findAll();

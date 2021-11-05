@@ -26,7 +26,7 @@ public class CadastroService {
       }
       if (grupo1 == null) {
          cadastroDAO.save(grupo);
-      } else if (grupo1.getNome() == grupo.getNome()){
+      } else if (grupo1.getNome().toLowerCase().equalsIgnoreCase(grupo.getNome()) ){
          throw new Exception("Nome já exite, tente outro.");
 
          } else {

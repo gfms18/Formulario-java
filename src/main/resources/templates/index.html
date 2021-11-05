@@ -26,57 +26,57 @@
                         </div>
                         <form action="/salvar" method="POST">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="nomedogrupo" id="nomedogrupo" placeholder="name@example.com">
+                                <input type="text" class="form-control" name="nomedogrupo" id="nomedogrupo" placeholder="name@example.com" required>
                                 <label for="nomedogrupo">Nome do grupo</label>
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="direcaoartistica" id="direcaoartistica" placeholder="name@example.com">
+                                <input type="text" class="form-control" name="direcaoartistica" id="direcaoartistica" placeholder="name@example.com" required>
                                 <label for="direcaoartistica">Direção artistica</label>
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="nomedaacademia" id="nomedaacademia" placeholder="name@example.com">
+                                <input type="text" class="form-control" name="nomedaacademia" id="nomedaacademia" placeholder="name@example.com" required>
                                 <label for="nomedaacademia">Nome da academia</label>
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="endereco" id="endereco" placeholder="name@example.com">
+                                <input type="text" class="form-control" name="endereco" id="endereco" placeholder="name@example.com" required>
                                 <label for="endereco">Endereço</label>
                             </div>
 
                             <div class="row">
                                 <div class="col">
-                                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade:" >
+                                <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade:" required>
                                 </div>
                                 <div class="col">
-                                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado:" >
+                                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado:" required>
                                 </div>
                                 <div class="col">
-                                <input type="text" class="form-control" name="pais" id="pais" placeholder="País:" >
+                                <input type="text" class="form-control" name="pais" id="pais" placeholder="País:" required>
                                 </div>
                                 <div class="col">
-                                <input type="number" class="form-control" name="ddd" id="ddd" placeholder="DDD:" >
+                                <input type="number" class="form-control" name="ddd" id="ddd" placeholder="DDD:" required>
                                 </div>
                                 <div class="col">
-                                <input type="tel"  class="form-control" name="telefone" id="telefone" placeholder="Tel.:" >
+                                <input type="tel"  class="form-control" name="telefone" id="telefone" placeholder="Tel.:" required>
                                 </div>
                             </div>
                             <div>
                                 <label class="" for="concorrente" >Concorrente</label>
-                                <select class="form-select" style="width: 50%; margin-bottom: 20px;" name="concorrente" id="concorrente" aria-label="Default select example">
+                                <select class="form-select" style="width: 50%; margin-bottom: 20px;" name="concorrente" id="concorrente" aria-label="Default select example" required>
                                     <option value="true">Sim</option>
                                     <option selected value="false">Não</option>
                                 </select>
                             </div>
                             <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" name="modalidade" id="modalidade" placeholder="name@example.com">
+                                    <input type="text" class="form-control" name="modalidade" id="modalidade" placeholder="name@example.com" required>
                                     <label for="modalidade">Modalidade</label>
                             </div>
 
                             <div class="col-auto" style="margin-bottom: 20px;">
                                 <label class="visually-hidden" for="categoria">Preference</label>
-                                <select class="form-select" name="categoria" id="categoria">
+                                <select class="form-select" name="categoria" id="categoria" required>
                                     <option selected>Escolha a Categoria</option>
                                     <option value="Junior I">Junior I</option>
                                     <option value="Junior II">Junior II</option>
@@ -91,19 +91,19 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="coreografia" id="coreografia" placeholder="name@example.com">
+                                        <input type="text" class="form-control" name="coreografia" id="coreografia" placeholder="name@example.com" required>
                                         <label for="coreografia">Nome da coreografia</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="nomeCoreografo" id="nomeCoreografo" placeholder="name@example.com">
+                                        <input type="text" class="form-control" name="nomeCoreografo" id="nomeCoreografo" placeholder="name@example.com" required>
                                         <label for="nomeCoreografo">Nome do coreografo</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="tempoDuracao" id="tempoDuracao" placeholder="name@example.com">
+                                        <input type="text" class="form-control" name="tempoDuracao" id="tempoDuracao" placeholder="name@example.com" required>
                                         <label for="tempoduracao">Tempo de duração em minutos</label>
                                     </div>
                                 </div>
@@ -111,13 +111,13 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="nomeMusica" id="nomeMusica" placeholder="name@example.com">
+                                        <input type="text" class="form-control" name="nomeMusica" id="nomeMusica" placeholder="name@example.com" required>
                                         <label for="nomeMusica">Nome da musica</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="nomeCompositor" id="nomeCompositor" placeholder="name@example.com">
+                                        <input type="text" class="form-control" name="nomeCompositor" id="nomeCompositor" placeholder="name@example.com" required>
                                         <label for="nomeCompositor">Nome do compositor</label>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
 
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="release" id="release" placeholder="name@example.com">
+                                <input type="text" class="form-control" name="release" id="release" placeholder="name@example.com" required>
                                 <label for="release">Release da categoria (conteúdo, informações e objetivos do trabalho) </label>
                             </div>
                             

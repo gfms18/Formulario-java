@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CadastroDAO extends JpaRepository<Grupo, Long> {
 
-    public Grupo findGrupoByNomeEquals(String nome);
+    public Grupo findGrupoByNome(String nome);
 }

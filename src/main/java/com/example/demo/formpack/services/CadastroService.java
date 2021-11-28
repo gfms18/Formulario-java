@@ -20,7 +20,7 @@ public class CadastroService {
    private CadastroDAO cadastroDAO;
 
    public void cadastrarGrupo(Grupo grupo) throws Exception {
-      Grupo grupo1 = cadastroDAO.findGrupoByNomeEquals(grupo.getNome());
+      Grupo grupo1 = cadastroDAO.findGrupoByNome(grupo.getNome());
       if (grupo.getTempoDuracao() <= 2) {
          throw new Exception("Musica menor que 2 minutos.");
       }
